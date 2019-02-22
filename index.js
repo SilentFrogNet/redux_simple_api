@@ -11,7 +11,11 @@ export const fetchData = (url, actions, axiosInstance=null, successCallback=null
     dispatch(fetchDataBegin(begin))
     return axiosi.get(url)
     .then(json => {
-      dispatch(successCallback(success, json.data) || fetchDataResut(success, json.data))
+      dispatch(
+        (typeof successCallback === 'function') ?
+          successCallback(success, json.data) :
+          fetchDataResut(success, json.data)
+      )
       return json.data
     })
     .catch(error => dispatch(fetchDataResut(failure, error, true)))

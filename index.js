@@ -23,10 +23,10 @@ export const fetchData = (url, actions, axiosInstance=null, successCallback=null
 }
 
 const fetchDataBegin = (type) => ({ type })
-const fetchDataResut = (type, payload, isError=false) => {
+const fetchDataResut = (type, data, isError=false) => {
 	return (
 		isError ?
-		{ type, error:payload } :
-		{ type, payload }
+		{ type, error:data } :
+		{ type, data }
 	)
 }

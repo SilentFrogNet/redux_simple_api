@@ -2,26 +2,27 @@
   "name": "@silentfrog/redux_simple_api",
   "version": "1.0.0",
   "description": "Tools to call simple APIs from React-Redux",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SilentFrogNet/redux_simple_api.git"
-  },
+  "author": "Ilario Dal Grande <info@silentfrog.net> (http://silentfrog.net)",
+  "license": "GPL-3.0-or-later",
+  "copyright": "Copyright 2019 SilentFrog",
   "keywords": [
     "simple",
     "api",
     "redux",
     "react"
   ],
-  "author": "Ilario Dal Grande <ilario.dalgrande@silentfrog.net> (http://silentfrog.net)",
-  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentFrogNet/redux_simple_api.git"
+  },
   "bugs": {
     "url": "https://github.com/SilentFrogNet/redux_simple_api/issues"
   },
   "homepage": "https://github.com/SilentFrogNet/redux_simple_api#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "axios": "^0.18.0"
   }
